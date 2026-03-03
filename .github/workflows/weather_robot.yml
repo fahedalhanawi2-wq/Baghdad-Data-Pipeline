@@ -1,0 +1,37 @@
+name: Hourly Weather ETL
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run at minute 0 of every hour
+  workflow_dispatch:      # Allows us to click a "Run Now" button to test it
+
+permissions:
+  contents: write         # CRITICAL: Allows the robot to save data back to the repo
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install libraries
+      run: |
+        pip install pandas requests
+
+    - name: Run ETL Script
+      run: python extract.py
+
+    - name: Commit and Push Data
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git add baghdad_weather.csv
+        git commit -m "Auto-update weather data" || exit 0
+        git push
