@@ -1,0 +1,2 @@
+time,temperature,windspeed,winddirection,weathercode,is_day,latitude,longitude,timezone
+2026-03-03T08:15,16.6,12.8,349,0,1,33.3125,44.375,GMT
