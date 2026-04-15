@@ -708,3 +708,4 @@ time,interval,temperature,windspeed,winddirection,is_day,weathercode,latitude,lo
 2026-04-15T22:15,900,18.9,5.7,18,0,3,33.3152,44.3661,Asia/Baghdad
 2026-04-15T23:30,900,18.1,5.5,11,0,3,33.3152,44.3661,Asia/Baghdad
 2026-04-16T00:30,900,17.6,6.6,13,0,3,33.3152,44.3661,Asia/Baghdad
+2026-04-16T01:30,900,17.0,5.4,8,0,3,33.3152,44.3661,Asia/Baghdad
