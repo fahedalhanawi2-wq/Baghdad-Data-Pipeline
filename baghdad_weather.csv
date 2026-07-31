@@ -1929,3 +1929,4 @@ time,interval,temperature,windspeed,winddirection,is_day,weathercode,latitude,lo
 2026-07-31T04:45,900,32.0,4.1,315,0,0,33.3152,44.3661,Asia/Baghdad
 2026-07-31T11:30,900,45.6,7.1,311,1,0,33.3152,44.3661,Asia/Baghdad
 2026-07-31T14:15,900,48.2,6.3,283,1,0,33.3152,44.3661,Asia/Baghdad
+2026-07-31T16:30,900,47.4,7.3,281,1,0,33.3152,44.3661,Asia/Baghdad
